@@ -1,8 +1,12 @@
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.border.Border;
+
 import java.awt.*;
+import java.util.concurrent.Flow;
 
 
 
@@ -21,8 +25,7 @@ public class MainFrame extends JFrame{
 
 
         //StatSection
-        JPanel statPanel = new JPanel(new BorderLayout());
-        this.add(statPanel);
+        
         
     }
 
