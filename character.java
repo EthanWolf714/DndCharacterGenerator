@@ -1,8 +1,13 @@
 
+//Class representing DnD character
+
+import enums.DNDclasses;
+import enums.DNDraces;
 
 public class character {
-        private String charClass;
-        private String race;
+        private DNDclasses charClass;
+        private int level;
+        private DNDraces race;
         private String name;
         private String alignment;
         private String background;
@@ -13,6 +18,22 @@ public class character {
         private String equipment;
         private int spellsKnown;
         
+        public character(){
+                this.name = "";
+                this.level = 1;
+                this.alignment = "";
+                this.background = "";
+                this.hitPoints = 0;
+                this.armorClass = 0;
+                this.skills_Proficiencies = "";
+                this.feats = "";
+                this.equipment = "";
+                this.spellsKnown = 0;
+
+        }
+
+
+
 
     
 }

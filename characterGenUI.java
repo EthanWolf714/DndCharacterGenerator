@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 
 
 
-
+//UI main class
 public class characterGenUI extends JFrame{
 
 
