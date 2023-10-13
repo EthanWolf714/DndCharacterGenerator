@@ -8,6 +8,7 @@ public class character {
         private DNDclasses charClass;
         private int level;
         private DNDraces race;
+        private int[] stats;
         private String name;
         private String alignment;
         private String background;
@@ -24,7 +25,7 @@ public class character {
                 this.alignment = "";
                 this.background = "";
                 this.hitPoints = 0;
-                this.armorClass = 0;
+                this.armorClass = 10;
                 this.skills_Proficiencies = "";
                 this.feats = "";
                 this.equipment = "";
