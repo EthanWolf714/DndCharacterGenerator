@@ -4,10 +4,10 @@ import javax.swing.JFrame;
 
 
 
-public class MainFrame extends JFrame{
+public class characterGenUI extends JFrame{
 
 
-    MainFrame(){
+    characterGenUI(){
         this.setTitle("DnD Character Generator");// sets title
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exit out of application
         this.setResizable(false);//prevents frame from being resized
@@ -20,6 +20,7 @@ public class MainFrame extends JFrame{
 
         //StatSection
         
+
         
     }
 

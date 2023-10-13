@@ -1,7 +1,7 @@
 
 public class Main { 
     public static void main(String[] args) {
-         MainFrame charSheet = new MainFrame();
+         characterGenUI charSheet = new characterGenUI();
          
          
 
