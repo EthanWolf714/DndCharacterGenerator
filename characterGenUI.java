@@ -18,7 +18,7 @@ public class characterGenUI extends JFrame{
         this.setIconImage(diceImg.getImage());
 
 
-        //StatSection
+        
         
 
         
