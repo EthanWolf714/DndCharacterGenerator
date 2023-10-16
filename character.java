@@ -40,6 +40,9 @@ public class character {
         public void setCharClass(DNDclasses charClass){
                 this.charClass = charClass;
         }
+        public int getLevel(){
+                return level;
+        }
         
         public DNDraces getRace(){
                 return race;
@@ -71,6 +74,12 @@ public class character {
         }
         public void setHP(int hitPoints){
                 this.hitPoints = hitPoints;
+        }
+        public int getAC(){
+                return armorClass;
+        }
+        public void setAC(int armorClass){
+                this.armorClass = armorClass;
         }
         public String getSkills_Proficiences(){
                 return skills_Proficiencies;
