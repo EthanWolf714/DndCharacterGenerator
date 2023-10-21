@@ -1,3 +1,5 @@
+import java.awt.GridLayout;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -18,7 +20,13 @@ public class characterGenUI extends JFrame{
         this.setIconImage(diceImg.getImage());
 
 
+        // input panel
+        inputPanel inptPanel = new inputPanel();
+        getContentPane().add(inptPanel);
         
+        
+        setLocationRelativeTo(null); // Center on screen
+        setVisible(true);
         
 
         
