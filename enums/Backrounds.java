@@ -1,5 +1,5 @@
 package enums;
 
-public class Backrounds {
-    
+public enum Backrounds {
+    Acolyte;
 }

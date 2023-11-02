@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import enums.Alignments;
+import enums.Backrounds;
 import enums.DNDclasses;
 import enums.DNDraces;
 
@@ -17,6 +18,7 @@ public class inputPanel extends JPanel {
     private JComboBox<DNDclasses> classComboBox;
     private JComboBox<DNDraces> raceComboBox;
     private JComboBox<Alignments> alignComboBox;
+    private JComboBox<Backrounds> backgroundCMB;
     
 
     public inputPanel() {
@@ -24,6 +26,7 @@ public class inputPanel extends JPanel {
         classComboBox = new JComboBox<>(DNDclasses.values());
         raceComboBox = new JComboBox<>(DNDraces.values());
         alignComboBox = new JComboBox<>(Alignments.values());
+        backgroundCMB = new JComboBox<>(Backrounds.values());
 
         setLayout(new FlowLayout(FlowLayout.LEFT));
 
@@ -34,11 +37,11 @@ public class inputPanel extends JPanel {
 
         add(new Label("Character Name: "));
         add(nameField);
-        add(new Label("Class"));
+        add(new Label("Class:"));
         add(classComboBox);
-        add(new Label("Race"));
+        add(new Label("Race:"));
         add(raceComboBox);
-        add(new Label("Alignment"));
+        add(new Label("Alignment:"));
         add(alignComboBox);
 
     }
