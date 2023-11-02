@@ -33,7 +33,8 @@ public class inputPanel extends JPanel {
         nameField.setPreferredSize(new Dimension(100, 20));
         classComboBox.setPreferredSize(new Dimension(100, 20));
         raceComboBox.setPreferredSize(new Dimension(100, 20));
-        alignComboBox.setPreferredSize(new Dimension(100, 20));
+        alignComboBox.setPreferredSize(new Dimension(50, 20));
+        backgroundCMB.setPreferredSize(new Dimension(100, 20));
 
         add(new Label("Character Name: "));
         add(nameField);
@@ -43,6 +44,8 @@ public class inputPanel extends JPanel {
         add(raceComboBox);
         add(new Label("Alignment:"));
         add(alignComboBox);
+        add(new Label("Backround:"));
+        add(backgroundCMB);
 
     }
 
