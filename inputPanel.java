@@ -1,6 +1,7 @@
 //UI componenet for input
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.util.concurrent.Flow;
 
 import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
@@ -100,6 +101,8 @@ public class inputPanel extends JPanel {
 
 
        JPanel statsPanel = new JPanel();
+       statsPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+       statsPanel.add(new JLabel("Str:"));
 
        JPanel equipmentPanel = new JPanel();
 
@@ -110,6 +113,7 @@ public class inputPanel extends JPanel {
 
 
         add(attributesPanel);
+        add(statsPanel);
         
 
 
