@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 
 //UI main class
 public class characterGenUI extends JFrame{
+    characterAttributes charAttributes = new characterAttributes();
 
 
     characterGenUI(){
@@ -21,7 +22,7 @@ public class characterGenUI extends JFrame{
 
 
         // input panel
-        inputPanel inptPanel = new inputPanel();
+        inputPanel inptPanel = new inputPanel(charAttributes);
         getContentPane().add(inptPanel);
         
         

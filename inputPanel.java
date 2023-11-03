@@ -2,8 +2,6 @@
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
-import java.awt.Label;
-
 import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -27,7 +25,9 @@ public class inputPanel extends JPanel {
     
     
 
-    public inputPanel() {
+    public inputPanel(characterAttributes characterAttributes) {
+        this.characterAttributes = characterAttributes;
+        
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         //Character Info section 
@@ -121,13 +121,16 @@ public class inputPanel extends JPanel {
         characterAttributes.setName(name);
     }
     private void updateCharacterLevel() {
-        try {
-            String levelText = levField.getText();
-            int level = Integer.parseInt(levelText);
-            characterAttributes.setLevel(level);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Please enter valid integer for character level", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+        String levelText = levField.getText();
+        if(!levelText.isEmpty()){
+            try {
+                int level = Integer.parseInt(levelText);
+                characterAttributes.setLevel(level);
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(this, "Please enter valid integer for character level", "Invalid Input", JOptionPane.ERROR_MESSAGE);
+            }
         }
+        
     }
 
 
