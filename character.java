@@ -3,4 +3,5 @@ public class character {
     private characterStats stats;
     private characterEquipment equipment;
     private characterSpells spells;
+    private charBackground background;
 }

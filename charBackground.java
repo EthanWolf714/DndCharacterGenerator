@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class charBackround {
+public class charBackground {
     private String name;
     private String description;
     private List<String> equipment;
