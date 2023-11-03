@@ -10,7 +10,6 @@ public class character {
         private DNDraces race;
         private String name;
         private String alignment;
-        private String background;
         private int hitPoints;
         private int armorClass;
         private String skills_Proficiencies;
@@ -24,7 +23,6 @@ public class character {
                 this.name = "";
                 this.level = 1;
                 this.alignment = "";
-                this.background = "";
                 this.hitPoints = 0;
                 this.armorClass = 10;
                 this.skills_Proficiencies = "";
@@ -62,12 +60,6 @@ public class character {
         }
         public void setAlightment(String alignment){
                 this.alignment = alignment;
-        }
-        public String getBackground(){
-                return background;
-        }
-        public void setBackground(String background){
-                this.background = background;
         }
         public int getHP(){
                 return hitPoints;
