@@ -99,10 +99,15 @@ public class inputPanel extends JPanel {
         attributesPanel.add(levField);
        //End Character info section
 
-
+        //stats section
        JPanel statsPanel = new JPanel();
-       statsPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+       statsPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
        statsPanel.add(new JLabel("Str:"));
+       statsPanel.add(new JLabel("Dex:"));
+       statsPanel.add(new JLabel("Con:"));
+       statsPanel.add(new JLabel("Int:"));
+       statsPanel.add(new JLabel("Wis:"));
+       statsPanel.add(new JLabel("Char:"));
 
        JPanel equipmentPanel = new JPanel();
 
